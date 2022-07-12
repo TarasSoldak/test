@@ -1,0 +1,65 @@
+@import "../../scss/variables.scss";
+
+.cryptoLink {
+  padding-top: 8%;
+  display: flex;
+  background-color:$baseTextColor;
+  .cryptoLink-img {
+    max-width: 53%;
+    img {
+      width: 130%;
+    }
+  }
+  .cryptoLink-text {
+    width: 47%;
+    .cryptoLink-text-block {
+      margin-top: 23%;
+      width: 76%;
+      h2 {
+        color: $baseBgColor;
+        font-size: $fontSizeH2;
+        margin-bottom: 0.78em;
+        font-weight: normal;
+        font-weight: $bold;
+      }
+      p {
+        color: $secondColorText;
+        font-size:$fontSize22;
+        margin-bottom: 3.6em;
+        font-weight: $medium;
+        line-height:2;
+      }
+      .cryptoLink-button {
+        button {
+          background-color: $baseBgColor;
+          &::after {
+            content:''; 
+            background:url("../../assets/images/arrowTop.png")left 99% top 56%/46% no-repeat;;
+            padding-left: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width:1720px){
+  .cryptoLink{
+    .cryptoLink-text{
+      font-size: 0.85rem;
+    }
+  }
+}
+@media(max-width:1380px){
+  .cryptoLink{
+    .cryptoLink-text{
+      font-size: 0.75rem;
+    }
+  }
+}
+@media(max-width:1220px){
+  .cryptoLink{
+    .cryptoLink-text{
+      font-size: 0.6rem;
+    }
+  }
+}

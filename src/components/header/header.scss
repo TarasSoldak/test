@@ -1,0 +1,48 @@
+@import "../../scss/variables.scss";
+
+header {
+    font-family: "Poppins" sans-serif;
+    padding-top: 1.6%;
+    background-color: $baseBgColor;
+    font-weight: $medium;
+    .header {
+        margin: 0 10.8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-link {
+            p {
+                font-size: 1.125em;
+            }
+        }
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            .logo-text {
+                font-size: $fontSize22;
+            }
+            .header-logo-img {
+                img {
+                    width: 3em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1720px) {
+    header {
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 1366px) {
+    header {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 1200px) {
+    header {
+        font-size: 0.65rem;
+    }
+}

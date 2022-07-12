@@ -1,0 +1,89 @@
+@import "../../scss/variables.scss";
+
+.passiveIncome {
+  padding-top: 13.5%;
+  background-color: $baseTextColor;
+  .passiveIncome-title {
+    text-align: center;
+    h2 {
+      color: $baseBgColor;
+      font-size: $fontSizeH2;
+      font-weight: $bold;
+      line-height: 1.34;
+      margin-bottom: 1.25em;
+      span {
+        color: #00ad6f;
+      }
+    }
+  }
+  
+  .passiveIncome-img {
+    margin-top: 3%;
+    display: flex;
+    justify-content: flex-end;
+    .passiveIncome-img-block {
+      width: 47%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .passiveIncome-img-text {
+      margin-top: 9%;
+      width: 53%;
+      color: black;
+      padding-left: 10.9%;
+      .circle-block {
+        margin-bottom: 10%;
+      }
+      .circle-block-two {
+        margin-bottom: 7.5%;
+      }
+      p {
+        margin-left: 7em;
+        font-size: 1.125em;
+        font-weight: $medium;
+        color: $secondColorText;
+      }
+    }
+    .circle {
+      display: flex;
+      align-items: center;
+      h3 {
+        font-size: 1.75em;
+        font-weight: $bold;
+      }
+
+      span {
+        color: $baseTextColor;
+        background-color: $baseBgColor;
+        border-radius: 50%;
+        font-size: 1.75em;
+        padding: 0.6em 1.23em;
+        margin-right: 1.64em;
+      }
+      .circle-two,
+      .circle-three {
+        padding: 0.6em 1.1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1720px) {
+  .passiveIncome {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 1380px) {
+  .passiveIncome {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 1220px) {
+  .passiveIncome {
+    font-size: 0.6rem;
+  }
+}

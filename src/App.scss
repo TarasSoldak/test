@@ -1,0 +1,10 @@
+@import "./scss/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap");
+.App {
+    font-family: "Poppins", sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+    color: $baseTextColor;
+    background-color: $baseBgColor;
+    overflow: hidden;
+}

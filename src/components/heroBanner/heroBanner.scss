@@ -1,0 +1,77 @@
+@import "../../scss/variables.scss";
+
+.banner {
+  background-color: $baseBgColor;
+  padding-top: 1.6%;
+
+  .banner-block {
+    position: relative;
+    padding-top: 52%;
+    background: 
+    url("../../assets/images/bannerIPhone.png") right 0 bottom 0/36% no-repeat,
+    url("../../assets/images/bannerEllipses.png") right 0 bottom 0/53.6% no-repeat;
+
+    .banner-block-text {
+      position: absolute;
+      top: 17.3%;
+      left: 11%;
+      h1 {
+        font-size: 5.25em;
+        margin-bottom: 1.1em;
+        font-weight: $bold;
+        line-height: 1.2;
+      }
+      p {
+        font-size:$fontSize22;
+        font-weight: $medium;
+        padding-bottom: 4.77em;
+      }
+      .banner-buttons {
+        button {
+          margin-right: 1.7em;
+          background-color: #24262b;
+          &::after {
+            content:''; 
+            background:url("../../assets/images/arrowDown.png")left 99% top 55%/46% no-repeat;
+            padding-left: 1.5em;
+          }
+        &:nth-child(2){
+          background-color: #00AD6F;
+          &::after {
+            content: '';
+            background:url("../../assets/images/arrowTop.png")left 98% top 63%/46% no-repeat;
+            padding-left: 1.5em;
+          }
+        }
+      }
+      }
+    }
+  }
+}
+@media(max-width:1720px){
+  .banner{
+    .banner-block{
+      .banner-block-text{
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+@media(max-width:1380px){
+  .banner{
+    .banner-block{
+      .banner-block-text{
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+@media(max-width:1220px){
+  .banner{
+    .banner-block{
+      .banner-block-text{
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

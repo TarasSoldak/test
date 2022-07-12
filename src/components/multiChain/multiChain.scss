@@ -1,0 +1,67 @@
+@import "../../scss/variables.scss";
+
+.multiChain {
+  padding-top: 6%;
+  padding-bottom: 9%;
+  background-color: $baseTextColor;
+  .multiChain-title {
+    max-width: 52%;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      font-size: $fontSizeH2;
+      color: $baseBgColor;
+      font-weight: $bold;
+      margin-bottom: 0.56em;
+    }
+    p {
+      font-size: $fontSize22;
+      color: $secondColorText;
+      font-weight: $medium;
+      line-height: 2;
+    }
+  }
+  .multiChain-coin {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    color: $baseBgColor;
+    margin-top: 8.6%;
+    .multiChain-coin-name {
+      width: 18%;
+      height: 358px;
+      background: url("../../assets/images/subtract.png") 0 0/100% no-repeat;
+      img {
+        width: 46%;
+        display: inline-block;
+        position: relative;
+        left: 27%;
+        bottom: 4.5%;
+      }
+
+      p {
+        margin-top: 15%;
+        text-align: center;
+        font-size: 175%;
+        font-weight: $bold;
+      }
+    }
+  }
+}
+@media (max-width: 1720px) {
+  .multiChain {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 1380px) {
+  .multiChain {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 1220px) {
+  .multiChain {
+    font-size: 0.6rem;
+  }
+}

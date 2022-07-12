@@ -1,0 +1,83 @@
+@import "../../scss/variables.scss";
+
+footer {
+  border-color: $baseBgColor;
+  .footer-wrapper {
+    margin: 10% 11% 4.3% 11%;
+    .footer-up {
+      font-size: 1.125em;
+      font-weight: $medium;
+      margin-bottom: 1.88em;
+    }
+    .footer-email {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6.68%;
+      h2 {
+        font-size: $fontSizeH2;
+        font-weight: $bold;
+      }
+      .footer-social-network {
+        display: flex;
+        flex: 0.4;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer-social-item {
+          width: 2.125em;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .footer-footer {
+    margin-top: 5.6%;
+    display: flex;
+    justify-content: space-between;
+    .footer-footer-info {
+      display: flex;
+      flex: 0.65;
+      justify-content: space-between;
+      p {
+        color: rgb(255, 255, 255, 60%);
+        font-size: 1.125em;
+        font-weight: $semiBold;
+        &:nth-child(1) {
+          font-weight: $medium;
+        }
+      }
+    }
+    .footer-footer-button {
+      button {
+        background-color: #24262b;
+      }
+    }
+  }
+}
+
+@media (max-width: 1720px) {
+  footer {
+    .footer-wrapper {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+@media (max-width: 1380px) {
+  footer {
+    .footer-wrapper {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  footer {
+    .footer-wrapper {
+      font-size: 0.55rem;
+    }
+  }
+}

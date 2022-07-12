@@ -1,0 +1,33 @@
+@import "../../scss/variables.scss";
+
+.extra {
+  display: flex;
+  justify-content: center;
+  gap: 1.875em;
+  button {
+    padding: 0.7em 2.375em 0.8em 0;
+    display: flex;
+    background-color: $baseBgColor;
+    font-size: 0.875em;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.2;
+    &:nth-child(2) {
+      text-transform: none;
+    }
+    .passiveIncome-button-text {
+      p:nth-child(2) {
+        text-transform: none;
+        font-size: $fontSize22;
+        font-weight: $medium;
+      }
+    }
+    .extra-button-img {
+      width: 41%;
+      padding: 0.3em 1.5em 0 2.375em;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
